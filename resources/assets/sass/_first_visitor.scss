@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC');
+
+//===============================
+// 動画表示部分のラッパー
+//===============================
+.fv_description_wrapper {
+	width : 100%;
+	height : 480px;
+	position : relative;
+	left : 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+
+	p.fv_desc_first_text {
+		font-size : 2.5rem;
+	}
+	p.fv_desc_second_text {
+		font-size : 1.5rem;
+
+		span {
+			padding : 0 5px;
+			&:nth-of-type(1){
+				letter-spacing: 1px;
+			}
+			&:nth-of-type(2){
+				font-weight : bold;
+				// font-size : 2rem;
+			}
+			&:nth-of-type(3){
+				letter-spacing: 1px;
+			}
+		}
+	}
+	div.fv_desc_reglog_wrapper {
+		p.fv_desc_register , p.fv_desc_login {
+
+			a {
+				color : white;
+				text-decoration: none;
+				padding : 15px 25px;
+				border : 1px solid white;
+				border-radius : 5px;
+				background-color: rgba(0, 0, 0, 0);
+				transition : background-color 0.2s ease;
+
+				&:hover {
+					background-color: rgba(255,255,255,0.2);
+				}
+			}
+		}
+	}
+}
+
+.fv_desc_reglog_wrapper {
+	color : white;
+	display: flex;
+	justify-content: center;
+}
+
+.index_main_video_over_wrapper {
+	width : 100%;
+	height : 100%;
+	position: absolute;
+	top : 0;
+	left : 0;
+	background-image: url("/storage/app_images/layer/01.png");
+	background-repeat: repeat;
+}
+
+.index_main_video_wrapper {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+.index_main_video {
+	width : 100%;
+	height : 100%;
+	position: absolute;
+	top : 0;
+	left : 0;
+	z-index: -1;
+	object-fit: cover;
+}
+
+div.fv_description_text_wrapper {
+
+	z-index: 20;
+
+	p {
+		font-size : 2rem;
+		color : white;
+		margin : 20px;
+		margin-left : 50px;
+		display: block;
+
+	}
+
+	b {
+		font-weight : bold;
+	}
+
+}
+
+
+
+.fv_wrapper {
+	width : $base_width;
+	margin : 0 auto;
+}
+
+
+//====================================
+// feature
+//
+// タイトル部分とコンテンツ部分に分かれる
+// コンテンツ部分は画像部分とテキスト部分に分かれる
+//
+//====================================
+.fv_feature_wrapper {
+
+}
+
+// タイトル部分
+.fv_feature_title_wrapper {
+	display: flex;
+	justify-content: center;
+	padding : 20px 0;
+	.fv_feature_title {
+		margin-top : 45px ;
+		font-family: 'Alegreya Sans SC', sans-serif;
+		font-size : 3rem;
+		color : #666;
+		border-bottom : 1px solid #666;
+		text-align: center;
+		// border-bottom : 2px solid $color_orange;
+		display: inline-block;
+		letter-spacing: 1px;
+	}
+
+}
+
+// コンテンツ部分
+.fv_feature_content_wrapper {
+	width : 100%;
+	display: flex;
+	justify-content: center;
+	// border : 1px solid;
+
+	.fv_feature_content {
+		width : 45%;
+		display : flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-items: center;
+		align-content: center;
+		// border : 1px solid;
+
+		}
+	}
+
+
+//画像部分
+.fv_feature_image_wrapper {
+	position: relative;
+	width : 100%;
+	// height : 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		width : 85%;
+		transition : opacity 0.3s ease;
+	}
+	img.fv_feature_image {
+		opacity : 1;
+	}
+
+	img.fv_feature_image_after {
+		opacity : 0;
+		position: absolute;
+	}
+}
+
+.fv_feature_image_opa_add {
+	opacity : 1 !important;
+}
+.fv_feature_image_opa_sub {
+	opacity : 0 !important;
+}
+
+//テキスト部分
+.fv_feature_text_wrapper {
+	width : 100%;
+	// height : 50%;
+
+	p.fv_feature_content_title {
+		text-align: center;
+		font-size : 1.5rem;
+		width : 100%;
+	}
+
+	p.fv_feature_content_description {
+		font-size : 1rem;
+		padding : 20px 40px;
+		line-height: 1.5;
+		letter-spacing: 1px;
+	}
+}
+
+
+
+
+
+//==================================
+//
+//
+//==================================
+.fv_cg_img_wrapper {
+	width : 100%;
+	height : 400px;
+	position: relative;
+	display: flex;
+
+	align-items: center;
+	overflow : hidden;
+
+
+	background-size : cover;
+
+	&#fv_cg_img_wrapper_1 {
+		background-image : url("/storage/app_images/blender/flat4.png");
+		background-position: left top;
+		justify-content: flex-end;
+		p {
+			margin-right : 30px;
+		}
+	}
+
+	&#fv_cg_img_wrapper_2 {
+		background-image : url("/storage/app_images/blender/flat6.png");
+		background-position: right top;
+		justify-content: flex-start;
+		p {
+			margin-left : 30px;
+		}
+	}
+
+	p {
+		font-size : 2.5rem;
+		font-weight : bold;
+		letter-spacing: 2px;
+	}
+}
+
+.of_test_wrapper {
+	width : 100%;
+	img {
+		width : 100%;
+		height : 200px;
+		object-fit: cover;
+		object-position: center center;
+		border : 1px solid;
+	}
+}
+
+.fv_test_container {
+	width : 100%;
+	height : 400px;
+}
+.fv_test_media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

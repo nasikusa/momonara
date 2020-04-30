@@ -1,0 +1,166 @@
+div.ar_all_wrapper {
+	width : $base_width;
+	margin : 10px auto;
+	padding : 30px;
+	background-color: #fff;
+	a {
+		text-decoration: none;
+		color : black;
+	}
+}
+
+h1.ar_title {
+	font-size : 2rem;
+	font-weight : bold;
+	color : #444;
+}
+
+div.ar_info_wrapper {
+
+}
+
+// 作者情報の欄
+div.ar_author_info_wrapper {
+	width : 100%;
+	display: flex;
+	justify-content: flex-start;
+	margin : 10px 0;
+
+	div {
+		padding : 0 10px;
+	}
+
+	a.ar_author_link {
+		display: flex;
+		align-items: center;
+		&:hover {
+			color : $color_orange;
+		}
+	}
+	img.ar_author_icon_image {
+		width : 60px;
+		height : 60px;
+	}
+
+	#article_fol_button {
+		display: flex;
+		align-items: center;
+		padding : 10px 25px;
+		border-radius : 4px;
+		border : 1px solid #444;
+		margin : 0 15px;
+
+		.article_fol_text {
+			font-weight : bold;
+			cursor: pointer;
+			color : #444;
+		}
+	}
+
+}
+
+// いいねとストック
+
+.article_ajax_button {
+	border : 1px solid #666;
+	border-radius : 3px;
+	display: block;
+	margin : 0 5px;
+	display: flex;
+	align-items: center;
+	font-weight : bold;
+	cursor : pointer;
+}
+
+// いいねとストック数を表示する
+.article_like_stock_button {
+	display : flex;
+	justify-content: flex-start;
+	p {
+		padding : 10px 15px;
+		display: flex;
+		align-items: center;
+	}
+	span.article_like_stock_num {
+		font-size : 1.4rem;
+		font-weight : bold;
+		padding : 0 10px;
+	}
+
+	img.article_good_count_img , img.article_stock_count_img {
+		width : 30px;
+		height : 30px;
+	}
+
+}
+
+// js用
+.article_liked {
+	background-color: rgb(255, 243, 217) !important;
+}
+
+.article_stocked {
+	background-color: rgb(220, 255, 171) !important;
+}
+
+.article_followed {
+	background-color: rgb(252, 255, 213) !important;
+}
+
+
+
+// tag
+div.article_tag_space {
+
+	padding : 20px;
+	padding-left : 0px;
+
+}
+
+div.article_tag_content {
+	display: inline-block;
+
+	a {
+		padding : 5px ;
+		background-color: #fff;
+		color : black;
+		border-radius : 3px ;
+		margin : 0 5px;
+		border : 1px solid #555;
+		transition: background-color 0.3s ease;
+
+		&:hover {
+			background-color: #eee;
+
+
+		}
+	}
+}
+
+// 編集するためのボタンを表示
+.article_edit_button_wrapper {
+	margin : 10px 0;
+	padding : 15px 25px 15px 0;
+	a {
+		padding : 5px 10px;
+		border : 2px solid #999;
+		color : #666 !important; 
+		border-radius : 3px;
+		font-size : 1.3rem;
+		font-weight : bold;
+		transition : color 0.2s ease , background-color 0.2s ease;
+		&:hover {
+			opacity : 0.4;
+		}
+	}
+}
+
+// 記事のメインコンテンツ
+.main_text {
+	opacity : 0;
+	width : 70%;
+}
+
+.main_text_add_opa {
+	opacity : 1 !important;
+}

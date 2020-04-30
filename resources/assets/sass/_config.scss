@@ -1,0 +1,159 @@
+//=========================
+// 全体
+//=========================
+.con_wrapper {
+	display: flex;
+	width : $base_width;
+	margin : 20px auto;
+}
+
+.con_icon_image {
+	width : 100px;
+	height : 100px;
+}
+
+//=========================
+// 左カラム
+//=========================
+.con_left_column {
+	width : 30%;
+}
+
+.con_nav_wrapper {
+	width : 100%;
+	display: flex;
+	flex-wrap : wrap;
+	// align-items: center;
+	// align-content: center;
+
+}
+
+.con_nav_button {
+
+	width : 80%;
+	margin : 5px 0;
+	// border : 1px solid;
+
+	a {
+		width : 100%;
+		padding : 10px 0;
+		text-decoration: none;
+		color : #555;
+		border : 1px solid rgb(78, 127, 255);
+		display: block;
+		font-weight : bold;
+		text-align: center;
+		background-color : #fff;
+
+		&:hover {
+			opacity : 0.8;
+		}
+
+	}
+}
+
+.con_side_nav_class {
+	background-color: rgb(78, 127, 255);
+	color : white;
+}
+
+//==========================
+// 右カラム
+//==========================
+.con_right_column {
+	width : 70%;
+}
+
+#config_main_form {
+
+	.con_form_content {
+		display: flex;
+		width : 100%;
+		background-color: #fff;
+		margin : 15px 0;
+		padding : 15px 0;
+		align-items: center;
+	}
+}
+
+//名前
+.con_form_left {
+	// flex-grow : 1;
+	width : 30%;
+	display: flex;
+	justify-content: center;
+	font-weight : bold;
+	color : #333;
+	font-size : 0.95rem;
+}
+//内容
+.con_form_right {
+	// flex-grow : 2;
+	width : 70%;
+}
+
+.con_icon_upload_about {
+	font-size : 0.95rem;
+	color : #555;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+}
+
+// 名前
+.con_name_input {
+	width : 100%;
+	padding : 10px;
+	box-sizing: border-box;
+	font-size : 1.1rem;
+}
+
+//　自己紹介
+.con_selfintro_textarea {
+	width : 100%;
+	resize : none;
+	padding : 10px;
+	font-size : 0.9rem;
+	box-sizing: border-box;
+}
+
+.con_email_input {
+	width : 100%;
+	padding : 15px;
+	box-sizing: border-box;
+	font-size: 0.95rem;
+}
+
+
+.con_submit_input_wrapper {
+
+}
+.con_submit_input {
+	background-color: white;
+	color : #333;
+	padding : 20px 40px;
+	border-style : none;
+	font-size : 1rem;
+	border : 1px solid #666;
+	cursor: pointer;
+	font-weight : bold;
+	letter-spacing: 1px;
+	// transition: letter-spacing 0.25s ease;
+	&:hover {
+		opacity : 0.5;
+		// letter-spacing: 2.5px;
+	}
+}
+
+// js用
+.con_add_back_class {
+	background-color: rgb(66, 142, 255) !important;
+	color : white !important;
+}
+
+// 終了後
+.con_finish_text {
+	font-size : 1.3rem;
+	background-color: white;
+	padding : 20px;
+	margin : 20px;
+}

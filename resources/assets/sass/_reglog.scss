@@ -1,0 +1,124 @@
+//================================
+// 全体
+//================================
+div.rl_wrapper {
+	min-height : 100vh;
+	max-height : 100vh;
+	position: fixed;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 100vh;
+	overflow: hidden;
+
+	a {
+		text-decoration: none;
+		color : black;
+	}
+}
+
+//==========================
+// 入力フォーム本体
+//==========================
+//form位置調整用
+div.rl_form_outer_wrapper{
+	position: absolute;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+// form欄の本体のラッパー
+div.rl_form_wrapper {
+	width : 500px;
+	border : 2px solid #999;
+	padding : 20px;
+	background-color : rgb(255,255,255);
+	opacity : 0.9;
+}
+
+// form欄のtitle
+div.rl_title {
+	font-size : 1.5rem;
+	padding : 10px;
+}
+// form欄のinputの見出し
+label.rl_form_label {
+	font-size : 1.2rem;
+	display: block;
+	padding : 10px;
+}
+// テキスト入力タイプのinput
+.rl_form_input {
+	border : 0;
+	padding:10px;
+	font-size:1.1em;
+	color:#aaa;
+	border:solid 1px #666;
+	margin:0 0 20px;
+	width:300px;
+	border-radius : 3px;
+	outline : none;
+	// box-shadow: inner 0 0 10px rgba(0, 0, 0, 1);
+
+	&:focus {
+		border : 1px solid $color_orange;
+	}
+}
+
+.rl_form_checkbox {
+	padding : 5px;
+}
+
+// ログインボタン（新規登録でも使用）
+.rl_login_button {
+	margin : 15px 0;
+	padding : 10px 20px;
+	font-size : 1.2rem;
+	background-color : white;
+	border-style : none;
+	border-radius : 5px;
+	border : 1px solid black;
+	cursor : pointer;
+
+	&:hover {
+		opacity : 0.75;
+	}
+}
+
+.rl_password_forget_anchor {
+	font-size : 0.9rem;
+	margin-left : 10px;
+}
+
+
+.rl_error_wrapper {
+	font-weight : bold;
+	font-size : 0.9rem;
+	color : rgb(255, 159, 46);
+	margin-bottom : 10px;
+}
+
+//=============================
+// 背景画像
+//=============================
+.rl_back_image_wrapper {
+	width : 100%;
+	height : 100vh;
+	position: fixed;
+	top : 0;
+	left : 0;
+	// width : 500px;
+	// height : 500px;
+	z-index: -1;
+}
+
+.rl_back_image {
+	width : 100%;
+	height : 100%;
+	object-fit: cover;
+	object-position: center center;
+}

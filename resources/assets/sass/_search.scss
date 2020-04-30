@@ -1,0 +1,19 @@
+div.se_all_wrapper {
+	width : $base_width;
+	border-radius : 5px;
+	padding : 20px;
+	margin : 0 auto;
+
+	a {
+		text-decoration : none;
+		color : black;
+	}
+}
+
+.se_title {
+	font-size : 1.5rem;
+	font-weight : bold;
+	padding : 10px 0;
+	letter-spacing: 0.5px;
+	color : #333;
+}

@@ -1,0 +1,235 @@
+//============================
+// 全体
+//============================
+.index_all_wrapper {
+	width : $base_width;
+	padding : 0 20px;
+	margin : 0 auto;
+	display: flex;
+
+
+	a {
+		text-decoration : none;
+		color : #444;
+	}
+}
+
+// 左カラム
+.index_left_column {
+	width : 60%;
+	position: relative;
+}
+// 右カラム
+.index_right_column {
+	width : 40%;
+	position: relative;
+	padding : 10px;
+}
+
+
+
+//==============================
+// 記事のラッパー
+//==============================
+
+//記事の切り替え用のボタン
+div.index_target_wrapper {
+	background-color: #fff;
+	margin : 10px 0;
+	padding : 10px 20px 10px 10px;
+	z-index: 100;
+	display: inline-block;
+	border-radius: 5px;
+
+	.index_target_title {
+		font-weight : bold;
+		letter-spacing: 1px;
+		padding : 10 10px;
+		margin : 10px 0;
+		color : #666;
+	}
+}
+
+div.index_target_button_wrapper {
+	display: flex;
+
+	p.index_target_button {
+		margin : 0 10px 0 0;
+		font-weight : bold;
+		padding : 10px 20px;
+		color : white;
+		border-radius: 5px;
+		border : 1px solid rgb(34, 123, 255);
+		color : #444;
+		cursor : pointer;
+		&:hover {
+			opacity : 0.8;
+		}
+	}
+}
+// js用
+.index_target_now {
+	background-color: rgb(34, 123, 255) !important;
+	color : #fff !important;
+}
+
+//ここらへんから記事紹介本体
+.index_follow_article_wrapper {
+
+}
+
+.index_latest_article_wrapper {
+
+}
+
+// タイトル（ラッパー）
+.index_article_title {
+	font-size : 1rem;
+	font-weight : bold;
+	color : #777;
+	margin : 10px 0;
+	display : inline-block;
+}
+
+.index_follow_article_content , .index_latest_article_content {
+	background-color: #fff;
+	// border-bottom : 1px solid #999;
+	display : flex;
+	margin : 8px 0;
+	padding : 10px;
+}
+
+// アイコンラッパー
+.index_article_content_left {
+	display: flex;
+
+	img.index_article_icon_img{
+		width : 50px;
+		height : 50px;
+	}
+}
+
+// 右側
+.index_article_content_right {
+
+}
+
+
+//=================================
+//  記事のユーザーデータの欄
+//=================================
+.index_article_ud_wrapper {
+	display : flex;
+	flex-wrap : wrap;
+	align-items: center;
+	padding : 5px 0;
+}
+
+.index_article_ud_1 , .index_article_ud_2 {
+	width : 100%;
+	display: flex;
+	justify-content: flex-start;
+
+	& > div {
+		padding : 2px 10px;
+	}
+
+}
+
+// 作者
+.index_article_author {
+
+	a {
+		color : #444;
+
+		&:hover {
+			color : $color_orange;
+		}
+	}
+}
+
+// 日時
+.index_article_date {
+	font-size : 0.9rem;
+	color : #666;
+}
+// タイトル
+.index_article_name {
+	font-size : 1rem;
+	font-weight : bold;
+	padding : 5px 0 5px 0;
+	display : block;
+	letter-spacing: 0.5px;
+	&:hover {
+		opacity : 0.75;
+	}
+}
+
+// ハート、ストック
+.index_fav_icon_image , .index_stock_icon_image {
+	width : 20px;
+	height : 20px;
+}
+
+
+//=============================
+// 右カラム
+//=============================
+// ユーザーランキング
+.index_user_ranking_wrapper {
+	margin : 40px 0;
+}
+
+.user_like_ranking_content {
+	margin : 5px 0;
+	padding : 5px 0;
+	background-color: #fff;
+}
+
+.user_like_ranking_user_info {
+	a {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.index_user_ranking_icon {
+	width : 50px;
+	height : 50px;
+}
+
+.index_user_rank_name {
+	font-weight : bold;
+	margin-left : 20px;
+}
+
+
+// タグランキング
+div.index_tag_ranking_wrapper {
+
+}
+
+.index_tag_ranking_content {
+	padding : 10px;
+	background-color: #fff;
+	margin : 5px 0;
+
+	&:hover {
+		opacity : 0.75;
+	}
+}
+
+// タイトル周りまとめ
+.index_tag_ranking_title , .index_user_ranking_title {
+	font-size : 1rem;
+	font-weight : bold;
+	color : #666;
+	padding : 5px 0;
+}
+
+.index_user_ranking_total_title , .index_user_ranking_week_title {
+	font-size : 1rem;
+	margin : 10px 0;
+	letter-spacing: 1px;
+	color : #333;
+}

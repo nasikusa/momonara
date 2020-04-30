@@ -1,0 +1,206 @@
+div.mypage_all_wrapper {
+	width : $base_width;
+	// border : 1px solid #444;
+	padding : 30px;
+	margin : 10px auto;
+	border-radius : 5px;
+	a {
+		text-decoration : none;
+		color : black;
+	}
+}
+
+// マイページのユーザー情報を記載してるところ
+div.mp_user_info_wrapper {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #fff;
+	flex-wrap : wrap;
+}
+
+.mp_user_info_first_wrapper {
+	width : 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #fff;
+}
+.mp_user_info_second_wrapper {
+	width : 100%;
+	padding : 10px 0 10px 30px;
+}
+
+.mp_icon_wrapper {
+	img.mp_icon_image {
+		width : 80px;
+		height : 80px;
+	}
+}
+
+
+h1.mp_user_name {
+	font-size : 1.2rem;
+	a{
+		color : #555;
+		&:hover {
+			color : $color_orange;
+		}
+	}
+}
+
+div.mp_fol_button {
+	margin : 0 20px;
+
+	a{
+		color : #555;
+		&:hover {
+			color : $color_orange;
+		}
+	}
+
+	.mp_fol_num {
+		font-size : 1.3rem;
+	}
+}
+
+.mp_following_button {
+
+}
+
+.mp_follower_button {
+
+}
+
+.config_button_wrapper {
+	margin : 0 0 0 40px;
+	a {
+		padding : 7px;
+		border : 1px solid #777;
+		font-weight : bold;
+		background-color: #777;
+		color : white !important;
+		border-radius : 5px;
+		transition: color 0.2s ease , background-color 0.2s ease;
+		&:hover {
+			color : #666 !important;
+			background-color: white;
+			// transform: translateY(20px);
+		}
+	}
+}
+
+//============================
+// メインコンテンツ
+//============================
+.mp_main_content_wrapper {
+	display: flex;
+	// padding : 30px;
+}
+
+
+//=============================
+// 左カラム
+//=============================
+.mp_left_column {
+	width : 60%;
+}
+
+
+
+
+
+
+//=============================
+// 右カラム
+//=============================
+.mp_right_column {
+	width : 40%;
+	padding : 15px;
+
+}
+
+// ユーザー情報
+.mp_side_user_info_wrapper {
+
+}
+
+.mp_side_like_wrapper , .mp_side_stock_wrapper {
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	margin : 5px 0;
+	padding : 5px 0;
+
+	span {
+		color : #333;
+	}
+}
+
+img.mp_like_total_icon , img.mp_stock_total_icon {
+	width : 25px;
+	height : 25px;
+	padding : 0 15px;
+}
+
+// よく使うタグ
+.mp_side_article_tag_wrapper {
+	display: flex;
+	flex-wrap : wrap;
+	margin : 20px 0;
+
+	.mp_side_article_tag_title {
+		width : 100%;
+		font-weight : bold;
+		color : #666;
+
+	}
+}
+
+
+.mp_side_article_tag_content {
+
+
+	a {
+		color : #666 !important;
+		display: block;
+		border : 1px solid #333;
+		padding : 5px 10px;
+		border-radius : 5px;
+		margin : 5px;
+		background-color: #fff;
+
+		&:hover {
+			opacity : 0.5;
+		}
+	}
+}
+
+//最近のフォロー状況
+.mp_side_latest_follow_wrapper , .mp_side_latest_followed_wrapper {
+
+	margin : 15px 0;
+	padding : 5px;
+
+	h3 {
+		font-weight : bold;
+		color : #666;
+	}
+}
+
+.mp_side_latest_follow_content {
+	background-color: #fff;
+	margin : 5px 0;
+	a {
+		display: flex;
+		align-items: center;
+	}
+	img {
+		width : 50px;
+		height : 50px;
+
+	}
+	span {
+		padding : 0 10px;
+	}
+}
