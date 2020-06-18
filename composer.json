@@ -9,8 +9,9 @@
         "fideloper/proxy": "~3.3",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
-		"doctrine/dbal": "2.*",
-		"panique/laravel-sass": "dev-master"
+        "doctrine/dbal": "2.*",
+        "panique/laravel-sass": "dev-master",
+        "symfony/http-foundation": "3.4.35"
     },
     "require-dev": {
         "filp/whoops": "~2.0",
@@ -34,8 +35,7 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": [
-            ]
+            "dont-discover": []
         }
     },
     "scripts": {
