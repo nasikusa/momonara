@@ -194,9 +194,8 @@
 				<h3 class="mp_side_article_tag_title">よく使うタグ</h3>
 				@for( $i = 0 ; $i < count( $my_article_tags ) ; $i++ )
 					<div class="mp_side_article_tag_content">
-					    <a href="/tag/{{ $my_article_tags[$i]['id'] }}">
+					    <a href="/tag?tag={{ $my_article_tags[$i]['name'] }}">
 							{{ $my_article_tags[$i]['name'] }}
-							<!-- ( {{ $my_article_tags[$i]['count'] }} ) -->
 						</a>
 					</div>
 				@endfor
@@ -211,7 +210,7 @@
 							@else
 							<img src="/storage/app_images/ex_icon.jpg">
 							@endif
-							<span>{{ $my_latest_follow_user[$i]['name'] }}</soan>
+							<span>{{ $my_latest_follow_user[$i]['name'] }}</span>
 						</a>
 					</div>
 				@endfor
