@@ -23,10 +23,12 @@
 		</div>
 	</div>
 
+	@if( !is_null($follow_user_articles) )
 	<div class="index_follow_article_wrapper">
 		<p class="index_article_title">
 			フォローユーザーの最新記事
 		</p>
+
 		@for ( $i = 0 ; $i < count( $follow_user_articles ) ; $i++ )
 
 		<div class="index_follow_article_content index_article_content">
@@ -86,12 +88,14 @@
 
 		@endfor
 	</div>
+	@endif
 
 	<div class="index_latest_article_wrapper">
 	    <p class="index_article_title">
 			最新記事
 		</p>
 
+		@if( !is_null($latest_articles) )
 	    @for ( $i = 0 ; $i < count( $latest_articles ) ; $i++ )
 
 	    <div class="index_latest_article_content index_article_content" >
@@ -148,6 +152,7 @@
 		</div>
 
 	    @endfor
+		@endif
 	</div>
 
 </div>{{-- index_left_column --}}

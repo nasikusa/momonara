@@ -45,6 +45,7 @@
 	<div class="mp_main_content_wrapper">
 		<div class="mp_left_column">
 		<div class="mp_article_all_wrapper">
+			@if( !is_null( $my_articles ) )
 			<div class="mp_post_article_wrapper">
 				<p class="index_article_title">
 					投稿記事
@@ -108,11 +109,13 @@
 
 				@endfor
 			</div>
+			@endif
 
 			<div class="mp_stock_article_wrapper">
 				<p class="index_article_title">
 					ストックした記事
 				</p>
+				@if( !is_null($my_stocks) )
 				@for ( $i = 0 ; $i < count( $my_stocks ) ; $i++ )
 
 				<div class="index_follow_article_content index_article_content">
@@ -171,6 +174,8 @@
 				</div>
 
 				@endfor
+				@endif
+				
 			</div>
 			</div>
 		</div>{{-- mp_left_column --}}

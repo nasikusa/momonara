@@ -49,6 +49,7 @@
 	<div class="mp_main_content_wrapper">
 		<div class="mp_left_column">
 		<div class="mp_article_all_wrapper">
+			@if( !is_null($my_articles) )
 			<div class="mp_post_article_wrapper">
 				<p class="index_article_title">
 					投稿記事
@@ -112,7 +113,9 @@
 
 				@endfor
 			</div>
+			@endif
 
+			@if( !is_null($my_stocks) )
 			<div class="mp_stock_article_wrapper">
 				<p class="index_article_title">
 					ストックした記事
@@ -176,6 +179,8 @@
 
 				@endfor
 			</div>
+			@endif
+
 			</div>
 		</div>{{-- mp_left_column --}}
 		<div class="mp_right_column">
