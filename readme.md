@@ -1,8 +1,10 @@
 # momonara
 
-学生時代に練習で作成したLaravelを使用した「3DCGの知識共有サイト」。
+学生時代に練習で作成した Laravel を使用した「3DCG の知識共有サイト」。
 
-イメージとしては、qiitaの3dcg版の用な感じです。
+イメージとしては、qiita の 3dcg 版の用な感じです。
+
+![capture01](./storage/app/public/app_images/capture01.jpg)
 
 ## 注意点
 
@@ -12,7 +14,7 @@
 php artisan migrate
 ```
 
-Laravel側で画像や動画などがあるファイルへのアクセスリンクを作成するための下記のコマンドが必要です。
+Laravel 側で画像や動画などがあるファイルへのアクセスリンクを作成するための下記のコマンドが必要です。
 
 ```
 php artisan storage:link
