@@ -75,6 +75,7 @@
 	<div class="rl_back_image_wrapper">
 		@php
 		$back_image_name = "";
+        $random_num = rand(0,6);
 		switch($random_num){
 			case 0:
 			    // タイル

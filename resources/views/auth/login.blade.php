@@ -61,6 +61,7 @@
 
 	<div class="rl_back_image_wrapper">
 		@php
+        $random_num = rand(0,6);
 		$back_image_name = "";
 		switch($random_num){
 			case 0:
