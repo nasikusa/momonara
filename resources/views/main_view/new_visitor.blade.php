@@ -36,11 +36,11 @@
 	<div class="index_main_video_over_wrapper"></div>
 
 	<!-- <div class="index_main_video_wrapper"> -->
-	@if ( $random_num == 0  )
+	@if ( $random_num === 0  )
 		<video src="/storage/app_videos/main1_2mbps_10sec_24fps.mp4" autoplay playsinline muted class="index_main_video" loop="true" data-object-fit="cover">
-	@elseif ( $random_num == 1 )
+	@elseif ( $random_num === 1 )
 		<video src="/storage/app_videos/main2_2mbps_10sec_24fps.mp4" autoplay playsinline muted class="index_main_video" loop="true" data-object-fit="cover">
-	@elseif ( $random_num == 2 )
+	@elseif ( $random_num === 2 )
 		<video src="/storage/app_videos/main3_2mbps_10sec_24fps.mp4" autoplay playsinline muted class="index_main_video" loop="true" data-object-fit="cover">
 	@else
 		<video src="/storage/app_videos/main4_2mbps_10sec_24fps.mp4" autoplay playsinline muted class="index_main_video" loop="true" data-object-fit="cover">
