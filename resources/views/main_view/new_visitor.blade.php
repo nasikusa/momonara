@@ -132,28 +132,6 @@ for(i = 0 ; i < feature_image_wrapper.length ; i++ )
 	});
 }
 
-
-
-//
-// console.log(document.body.scrollHeight);
-// console.log(document.body.clientHeight);
-//
-// var window_width = window.innerWidth;
-// var window_height = window.innerHeight;
-// console.log(window_height);
-//
-// var cg_img1_wrapper = document.getElementsByClassName('fv_cg_img1_wrapper').item(0);
-//
-// var cg_img1_wrapper_rect = cg_img1_wrapper.getBoundingClientRect();
-// console.log(cg_img1_wrapper_rect);
-//
-// var scroll_top;
-// window.addEventListener('scroll' , function(){
-// 	scroll_top = window.pageYOffset;
-// 	window_height = window.innerHeight;
-// 	console.log(scroll_top);
-// });
-
 </script>
 
 @endsection
